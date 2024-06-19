@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Agregar peliculas</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1">MaViD <span>proyecto m2</span></h1>
+        <ul class="list">
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="./peliculas.html">agregar peliculas</a></li>
+          <li><a href="./histora.html">historia del cine</a></li>
+          <li><a href="./Webs.html">webs recomendadas</a></li>
+          <li><a href="./about.html">ACERCA DE</a></li>
+        </ul>
+      </header>
+          
+      
+      <div class="conForm">
+        
+        <h2 >AGREGA TUS PELICULAS FAVORITAS</h2>
+        
+        <form class="formulario" id="form" name="form">
+          <label for="title">Título:</label>
+          <input class="control" type="text" id="title" name="titulo" required><br><br>
+      
+          <label for="year">Año:</label>
+          <input  class="control" type="number" id="year" name="year" min="1900" max="2024" required><br><br>
+          
+      
+          <label for="director">Director:</label>
+          <input class="control" type="text" id="director" name="director" required><br><br>
+      
+          <label for="duration">Duración :</label>
+          <input class="control" type="text" id="duration" name="duration"  required><br><br>
+      
+          <label for="genre">Genero:</label>
+          <div id="options"></div>
+
+          <label for="rate">Calificación:</label>
+          <input class="control" type="number" id="rate" name="rate" min="1" max="10" step="0.1" required><br><br>
+      
+          <label for="poster">URL de la Imagen:</label>
+          <input class="control" type="text" id="poster" name="poster" required><br><br>
+      
+          <button class="boton" id="btnSubmit" type="submit" value="Enviar">Crear Película</button>
+          <button class="boton" id="btnCleaner" type="button" onclick="limpiarFormulario()">Limpiar</button>
+        </form>
+        
+      </div>
+      
+      <footer>
+        &copy;2024 - Matias Videla ♦ FILMS
+      </footer>
+      <script src= "../public/films.js"></script>
+</body>
+</html>

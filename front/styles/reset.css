@@ -1,0 +1,91 @@
+/* Box sizing border-box para todos los elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Normalización de estilos para elementos de bloque */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+fieldset,
+legend,
+figcaption,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos básicos para el cuerpo del documento */
+body {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+/* Lista sin estilos y quitar decoraciones de enlaces */
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Establecer márgenes cero en elementos específicos */
+img,
+iframe,
+embed,
+object,
+video {
+  margin: 0;
+}
+
+/* Estilos para formularios */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Estilos específicos para formularios en Edge e IE */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* Normalización de fuentes */
+html {
+  font-size: 16px; /* Ajusta el tamaño base de la fuente según tus preferencias */
+}
+
+/* Añade reglas adicionales según sea necesario */
